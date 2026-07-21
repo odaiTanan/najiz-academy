@@ -4,6 +4,7 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -56,5 +57,15 @@ class User extends Authenticatable
     public function scopeWithAuthorizationData(Builder $query): Builder
     {
         return $query->with(['roles.permissions', 'permissions']);
+    }
+
+    public function assessmentAttempts(): HasMany
+    {
+        return $this->hasMany(AssessmentAttempt::class);
+    }
+
+    public function trainingPlans(): HasMany
+    {
+        return $this->hasMany(TrainingPlan::class);
     }
 }

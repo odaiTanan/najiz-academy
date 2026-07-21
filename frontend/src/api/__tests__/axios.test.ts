@@ -22,7 +22,7 @@ describe('axios auth refresh queue', () => {
         id: 1,
         name: 'Admin',
         email: 'admin@example.com',
-        roles: [{ id: 1, name: 'admin', permissions: ['view-dashboard'] }],
+        roles: [{ id: 1, name: 'System Administrator', permissions: ['view-dashboard'] }],
         permissions: ['view-dashboard'],
       },
       accessToken: 'expired-token',
@@ -48,7 +48,7 @@ describe('axios auth refresh queue', () => {
         id: 1,
         name: 'Admin',
         email: 'admin@example.com',
-        roles: [{ id: 1, name: 'admin', permissions: ['view-dashboard'] }],
+        roles: [{ id: 1, name: 'System Administrator', permissions: ['view-dashboard'] }],
         permissions: ['view-dashboard'],
       },
     })

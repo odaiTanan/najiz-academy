@@ -30,7 +30,7 @@ class AuthFlowTest extends TestCase
             ->assertJsonPath('message', 'Authenticated successfully.')
             ->assertJsonPath('token_type', 'Bearer')
             ->assertJsonPath('user.email', 'admin@example.com')
-            ->assertJsonPath('user.roles.0.name', 'admin')
+            ->assertJsonPath('user.roles.0.name', 'System Administrator')
             ->assertJsonPath('user.permissions.0', 'view-dashboard')
             ->assertJsonPath('user.permissions.1', 'manage-users')
             ->assertCookie(config('auth_tokens.refresh_cookie_name'));
@@ -90,7 +90,7 @@ class AuthFlowTest extends TestCase
         $this->getJson('/api/dashboard')->assertForbidden();
 
         $adminRole = Role::query()->firstOrCreate([
-            'name' => 'admin',
+            'name' => 'System Administrator',
             'guard_name' => 'web',
         ]);
 
@@ -120,7 +120,7 @@ class AuthFlowTest extends TestCase
         ]);
 
         $adminRole = Role::query()->firstOrCreate([
-            'name' => 'admin',
+            'name' => 'System Administrator',
             'guard_name' => 'web',
         ]);
 
