@@ -12,7 +12,7 @@ type RetryableRequestConfig = InternalAxiosRequestConfig & {
 type RedirectHandler = (path: string) => void
 
 const viteEnv = (import.meta as ImportMeta & { env?: Record<string, string> }).env ?? {}
-const baseURL = viteEnv.VITE_API_BASE_URL ?? 'http://localhost:8000/api'
+const baseURL = viteEnv.VITE_API_BASE_URL ?? 'https://academy.najizgo.com/api'
 
 const authApi = axios.create({
   baseURL,
