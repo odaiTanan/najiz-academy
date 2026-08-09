@@ -12,7 +12,7 @@ Route::prefix('auth')->group(function (): void {
 
     Route::middleware('auth:sanctum')->get('me', [AuthController::class, 'me']);
 });
-
+ Route::get('courses', 'courses');
 Route::middleware(['auth:sanctum', 'role_or_permission:role:System Administrator|HR Manager|Trainer|Candidate|Employee,permission:view-dashboard'])->get('dashboard', function () {
     return response()->json([
         'message' => 'تم تحميل بيانات لوحة التحكم بنجاح.',
