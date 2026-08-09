@@ -22,7 +22,7 @@ class AcademySeeder extends Seeder
             $academy = Academy::query()->updateOrCreate(
                 ['code' => 'NJZ-DRV'],
                 [
-                    'name' => 'أكاديمية نجيز جو للسائقين',
+                    'name' => 'أكاديمية ناجز جو للسائقين',
                     'description' => 'أكاديمية تدريب وتقييم سائقي التوصيل السريع وفق معايير السلامة والجودة وخدمة العملاء.',
                     'status' => 'active',
                     'metadata' => ['region' => 'الرياض', 'locale' => 'ar'],
@@ -547,8 +547,8 @@ class AcademySeeder extends Seeder
                         'issued_at' => now()->subMonths(1),
                         'expires_at' => now()->addYear(),
                         'metadata' => [
-                            'title' => 'شهادة مدرب معتمد - أكاديمية نجيز جو',
-                            'issuer' => 'أكاديمية نجيز جو للسائقين',
+                            'title' => 'شهادة مدرب معتمد - أكاديمية ناجز جو',
+                            'issuer' => 'أكاديمية ناجز جو للسائقين',
                         ],
                     ],
                 );

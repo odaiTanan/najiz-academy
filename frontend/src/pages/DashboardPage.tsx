@@ -11,7 +11,7 @@ export default function DashboardPage() {
     <main className="space-y-6">
       <section className="grid gap-6 xl:grid-cols-[1.25fr_0.75fr]">
         <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-[var(--najiz-surface)] to-slate-100 p-6 shadow-lg shadow-slate-200/50">
-          <p className="text-sm tracking-[0.2em] text-[var(--najiz-accent)]">أكاديمية نجيز جو</p>
+          <p className="text-sm tracking-[0.2em] text-[var(--najiz-accent)]">أكاديمية ناجز جو</p>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
             مرحباً، {user?.name ?? 'مستخدم'}
           </h1>
@@ -35,10 +35,10 @@ export default function DashboardPage() {
 
         <aside className="rounded-3xl border border-slate-200 bg-white p-6 shadow-lg shadow-slate-200/50">
           <div className="flex items-center gap-3">
-            <img src={najizLogo} alt="أكاديمية نجيز جو" className="h-14 w-auto object-contain" />
+            <img src={najizLogo} alt="أكاديمية ناجز جو" className="h-14 w-auto object-contain" />
             <div>
               <p className="text-xs text-slate-500">العلامة</p>
-              <p className="text-sm font-semibold text-slate-900">نجيز جو للتوصيل السريع</p>
+              <p className="text-sm font-semibold text-slate-900">ناجز جو للتوصيل السريع</p>
             </div>
           </div>
 

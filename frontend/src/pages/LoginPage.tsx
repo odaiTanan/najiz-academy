@@ -22,9 +22,9 @@ export default function LoginPage() {
       <div className="grid w-full gap-8 lg:grid-cols-2">
         <section className="space-y-5">
           <div className="flex items-center gap-3">
-            <img src={najizLogo} alt="أكاديمية نجيز جو" className="h-14 w-auto object-contain" />
+            <img src={najizLogo} alt="أكاديمية ناجز جو" className="h-14 w-auto object-contain" />
             <div>
-              <p className="text-xs tracking-[0.2em] text-[var(--najiz-accent)]">نجيز جو</p>
+              <p className="text-xs tracking-[0.2em] text-[var(--najiz-accent)]">ناجز جو</p>
               <p className="text-sm font-semibold text-slate-900">الأكاديمية</p>
             </div>
           </div>

@@ -33,9 +33,9 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
       <div className="flex min-h-screen">
         <aside className="hidden w-72 flex-col border-l border-slate-200 bg-[var(--najiz-surface)]/95 px-5 py-6 shadow-lg shadow-slate-200/50 backdrop-blur xl:flex">
           <Link to="/dashboard" className="mb-8 flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
-            <img src={najizLogo} alt="أكاديمية نجيز جو" className="h-12 w-auto object-contain" />
+            <img src={najizLogo} alt="أكاديمية ناجز جو" className="h-12 w-auto object-contain" />
             <div>
-              <p className="text-xs tracking-[0.2em] text-[var(--najiz-accent)]">نجيز جو</p>
+              <p className="text-xs tracking-[0.2em] text-[var(--najiz-accent)]">ناجز جو</p>
               <p className="text-sm font-semibold text-slate-900">الأكاديمية</p>
             </div>
           </Link>
@@ -78,7 +78,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
               <div className="hidden items-center gap-3 xl:flex">
                 <div className="rounded-full bg-[var(--najiz-accent)]/15 px-3 py-1 text-xs font-semibold text-[var(--najiz-accent)]">
-                  أكاديمية نجيز جو
+                  أكاديمية ناجز جو
                 </div>
               </div>
 
@@ -94,7 +94,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
               <div className="fixed inset-0 z-40 bg-slate-900/50" onClick={() => setSidebarOpen(false)} />
               <aside className="fixed inset-y-0 right-0 z-50 w-80 max-w-[85vw] border-l border-slate-200 bg-[var(--najiz-surface)] px-5 py-6 shadow-xl shadow-slate-300/50">
                 <div className="mb-6 flex items-center justify-between">
-                  <img src={najizLogo} alt="أكاديمية نجيز جو" className="h-12 w-auto object-contain" />
+                  <img src={najizLogo} alt="أكاديمية ناجز جو" className="h-12 w-auto object-contain" />
                   <button type="button" onClick={() => setSidebarOpen(false)} className="rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-600">
                     إغلاق
                   </button>
